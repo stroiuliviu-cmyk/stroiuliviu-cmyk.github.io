@@ -2,39 +2,43 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ghid utilizare GitHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <nav>
-      <h1>Ghid GitHub</h1>
-      <ul>
-        <li><a href="index.html">Acasă</a></li>
-        <li><a href="ghid.html" class="active">Ghid utilizare</a></li>
-        <li><a href="comenzi.html">Comenzi Git</a></li>
-        <li><a href="repo.html">Repository</a></li>
-        <li><a href="colaborare.html">Colaborare</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-dark text-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow">
+    <div class="container">
+      <a class="navbar-brand text-info fw-bold" href="index.html">Ghid GitHub</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link active" href="ghid.html">Ghid utilizare</a></li>
+          <li class="nav-item"><a class="nav-link" href="comenzi.html">Comenzi Git</a></li>
+          <li class="nav-item"><a class="nav-link" href="repo.html">Repository</a></li>
+          <li class="nav-item"><a class="nav-link" href="colaborare.html">Colaborare</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <main>
-    <h2>Cum se utilizează GitHub</h2>
-    <p>GitHub este o platformă online bazată pe Git, folosită pentru stocarea, partajarea și colaborarea la proiecte software.</p>
-    <ul>
-      <li>🔹 Creează un cont pe <a href="https://github.com" target="_blank">github.com</a></li>
-      <li>🔹 Instalează Git pe calculatorul tău</li>
-      <li>🔹 Creează un repository nou</li>
-      <li>🔹 Încarcă fișierele proiectului tău</li>
-      <li>🔹 Colaborează cu alți utilizatori prin Pull Requests</li>
-    </ul>
+  <main class="container py-5">
+    <h2 class="text-info">Cum se folosește GitHub</h2>
+    <p class="mt-3">GitHub este o platformă pentru găzduirea codului și colaborarea la proiecte software. Pentru a începe:</p>
+    <ol>
+      <li>Creează un cont pe <a href="https://github.com" target="_blank" class="text-info">GitHub</a></li>
+      <li>Instalează Git pe calculatorul tău</li>
+      <li>Creează un repository nou</li>
+      <li>Adaugă fișiere și fă commit-uri</li>
+      <li>Publică modificările cu <code>git push</code></li>
+    </ol>
   </main>
 
-  <footer>
-    <p>© 2025 Ghid GitHub | Stroiu Liviu</p>
-  </footer>
+  <footer class="text-center py-4 border-top border-secondary">© 2025 Ghid GitHub</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
